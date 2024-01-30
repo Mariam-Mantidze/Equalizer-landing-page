@@ -61,6 +61,7 @@ h1 {
   background: #191826;
   height: 600px;
   background-image: url(./assets/bg-pattern-2.svg);
+  background-size: calc(280px);
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -176,6 +177,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 64px;
+  align-items: center;
 }
 
 .footer-flex-group {
@@ -212,4 +214,49 @@ footer span {
 
 .orange:hover {
   fill: #ffb964;
+}
+
+@media (min-width: 768px) {
+  #title-section {
+    background: url(./assets/bg-main-tablet.png);
+    background-image: url(./assets/bg-pattern-1.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    align-items: flex-start;
+    background-size: calc(23%);
+    padding: 61px 39px 249px;
+  }
+
+  h1 {
+    width: 520px;
+    font-size: 64px;
+    line-height: 64px; /* 100% */
+    letter-spacing: -0.727px;
+  }
+  #title-section p {
+    margin-top: 28px;
+    width: 514px;
+    color: #191826;
+    font-size: 18px;
+    line-height: 28px; /* 155.556% */
+  }
+
+  #main-content {
+    padding: 0 39px 0 33px;
+  }
+  #phone-img {
+    width: 270.206px;
+    top: -22%;
+    left: 97px;
+  }
+  #premium-eq {
+    width: 399px;
+    right: 97px;
+    top: 150px;
+    bottom: auto;
+  }
+
+  footer {
+    margin-top: 182px;
+  }
 }

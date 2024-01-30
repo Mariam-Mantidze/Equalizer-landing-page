@@ -257,6 +257,14 @@ footer span {
   }
 
   footer {
+    padding: 0 39px 85px 33px;
     margin-top: 182px;
+    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer p {
+    width: 366px;
   }
 }

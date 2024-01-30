@@ -23,7 +23,8 @@ button {
   flex-direction: column;
   align-items: flex-start;
   align-items: center;
-  background: url(./assets/bg-main-mobile.png);
+  background-image: url(./assets/bg-main-mobile.png);
+  background-position: left;
   padding: 40px 24px 0;
   padding-bottom: 166px;
 }
@@ -218,12 +219,11 @@ footer span {
 
 @media (min-width: 768px) {
   #title-section {
-    background: url(./assets/bg-main-tablet.png);
-    background-image: url(./assets/bg-pattern-1.svg);
-    background-repeat: no-repeat;
-    background-position: top right;
+    background: url(./assets/bg-pattern-1.svg), url(./assets/bg-main-tablet.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, top right;
     align-items: flex-start;
-    background-size: calc(23%);
+    background-size: calc(23%), cover;
     padding: 61px 39px 249px;
   }
 
@@ -266,5 +266,77 @@ footer span {
   }
   footer p {
     width: 366px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #title-section {
+    background: url(./assets/bg-pattern-1.svg),
+      url(./assets/bg-main-desktop.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, top left;
+    align-items: flex-start;
+    background-size: calc(20%), cover;
+    padding: 61px 165px 321px;
+  }
+  h1 {
+    width: 1015px;
+    font-size: 88px;
+    line-height: 88px; /* 100% */
+    letter-spacing: -1px;
+  }
+
+  #title-section p {
+    width: 825px;
+    font-size: 20px;
+    line-height: 34px; /* 170% */
+  }
+
+  #main-content {
+    padding: 0 165px 0;
+  }
+
+  #phone-img {
+    width: 312px;
+    left: 283px;
+    top: -31%;
+  }
+
+  #black-background {
+    background-position-x: 43.7%;
+    background-size: calc(300px);
+  }
+  #premium-eq {
+    width: 446px;
+    right: 260px;
+    top: 90px;
+    padding: 58px 59px 48px 54px;
+  }
+
+  #premium-eq h2 {
+    width: 333px;
+    font-size: 40px;
+    line-height: 52px; /* 130% */
+  }
+  #premium-main-p {
+    width: 333px;
+    font-size: 20px;
+    line-height: 34px; /* 170% */
+    margin-top: 22px;
+  }
+  #four-dollar {
+    margin-top: 36px;
+  }
+  #button-container {
+    margin-top: 46px;
+  }
+
+  footer {
+    margin-top: 201px;
+    padding: 0 165px 91px;
+  }
+  .footer-flex-group {
+    flex-direction: row;
+    gap: 137.7px;
   }
 }
